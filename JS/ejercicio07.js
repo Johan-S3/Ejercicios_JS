@@ -1,5 +1,6 @@
-let rentaAnual = parseFloat(prompt("Ingrese su renta anual"));
+let rentaAnual = parseFloat(prompt("Ingrese su renta anual")); // Solicito al usuario ingresar el valor de su renta anual.
 
+// Por medio de la siguiente funcion determino el porcentaje a pagar dependiendo de la renta declarada.
 function declararRenta(dinero) {
     let porcentaje;
     if (dinero <= 10000 && dinero < 20000) porcentaje = 5;
@@ -9,7 +10,7 @@ function declararRenta(dinero) {
     else porcentaje = 0;
     return porcentaje
 }
-
+// Mostrar mensaje dependiendo de lo que retorne la funcion anterior.
 if (declararRenta(rentaAnual) === 0) {
     alert("Usted no aplica para pagar impositivo...");
 }else{
