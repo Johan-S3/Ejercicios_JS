@@ -13,5 +13,10 @@ function calcValF(valorMedic ,descuento) {
     return valorFinal;
 }
 
-// Mostrar el descuento y el precio final del medicamento.
-alert(`El descuesto sobre el medicamento es: $${descuento(valorMedic)} \ny el valor final es: $${calcValF(valorMedic ,descuento(valorMedic))}`);
+try {
+    if(isNaN(valorMedic)) throw new Error("El valor ingresado no es valido...");
+    // Mostrar el descuento y el precio final del medicamento.
+    else alert(`El descuesto sobre el medicamento es: $${descuento(valorMedic)} \ny el valor final es: $${calcValF(valorMedic ,descuento(valorMedic))}`);
+} catch (error) {
+    alert(error);
+}
