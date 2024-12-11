@@ -7,7 +7,7 @@ let interes = function(deposito) {
     else if(deposito > 100000) return deposito *0.04;
 }
 
-// Manejo exepciones para validar que el dato ingresado sea un número,
+// Manejo exepciones para validar que el dato ingresado sea un número.
 try {
     if(isNaN(deposito)) throw("El valor ingresado no es valido.");
     else alert(`Interes anual: $${interes(deposito)}\nTotal saldo: $${deposito + interes(deposito)}`);
