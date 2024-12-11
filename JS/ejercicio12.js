@@ -13,7 +13,8 @@ try {
     alert(error)
 }
 // Creo la función donde se realiza la operación para calcular el area del rectangulo.
-function areaRectan(largo, ancho) {
+export function areaRectan(largo, ancho) {
     let area = largo * ancho;
     return area;
 }
+
