@@ -26,5 +26,5 @@ switch (num) {
         break;
 }
 
-// Muestro la cadena de texto que contiene el resultao.
+// Muestro la cadena de texto que contiene el resultado.
 alert(valor);
