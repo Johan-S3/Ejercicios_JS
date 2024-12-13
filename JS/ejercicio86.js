@@ -10,5 +10,5 @@ function sumar(num1, num2) {
 }
 
 
-// Calcular la suma en binario y mostrar el resultado
+// Calcular la suma en binario y mostrar el resultado.
 alert(`La suma de ${numero1} y ${numero2} en binario es: ${sumar(numero1, numero2)}`);
