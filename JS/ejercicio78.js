@@ -7,6 +7,6 @@ function longitud(palabra) {
     else return "Palabra larga";
 }
 
-// Valido si el valor ingresdao es una cadena de texto vacia o es nulo
+// Valido si el valor ingresdao es una cadena de texto vacia o es nulo.
 if (palabra == null || palabra === "") alert("Valor ingresado no valido.");
 else alert(`La palabra ingresa es una: \n${longitud(palabra)}`);
